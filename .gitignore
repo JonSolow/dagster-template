@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# dagster_mount directory for local storage
+dagster_mount
