@@ -1,0 +1,7 @@
+[project]
+name = "dagster-template"
+version = "1"
+dependencies = ["dagster", "dagit", "pandas"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8", "mypy", "types-requests"]
