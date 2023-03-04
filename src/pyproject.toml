@@ -1,7 +1,17 @@
 [project]
 name = "dagster-template"
 version = "1"
-dependencies = ["dagster", "dagit", "pandas"]
+dependencies = [
+    "dagit",
+    "dagster",
+    "dagstermill",
+    "papermill-origami>=0.0.8",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "notebook"
+    ]
 
 [project.optional-dependencies]
 dev = ["pytest", "black", "flake8", "mypy", "types-requests"]
