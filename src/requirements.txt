@@ -57,7 +57,7 @@ grpcio==1.47.5
     # via
     #   dagster
     #   grpcio-health-checking
-grpcio-health-checking==1.43.0
+grpcio-health-checking==1.51.3
     # via dagster
 h11==0.14.0
     # via uvicorn
