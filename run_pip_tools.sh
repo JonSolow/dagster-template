@@ -3,8 +3,8 @@
 CONTAINER_NAME=dev-pip-tools-$(basename `git rev-parse --show-toplevel`)
 
 # Remove requirements files before regenerating
-rm src/requirements.txt
-rm src/dev-requirements.txt
+rm requirements/requirements.txt
+rm requirements/dev-requirements.txt
 
 docker build \
     -f Dockerfile \
