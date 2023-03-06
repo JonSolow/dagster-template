@@ -1,6 +1,7 @@
 [project]
 name = "dagster-template"
 version = "1"
+requires-python = ">3.10"
 dependencies = [
     "dagit",
     "dagster",
