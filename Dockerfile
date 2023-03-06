@@ -13,9 +13,9 @@ RUN python3 -m pip install pip-tools
 WORKDIR ${APP_BASE_PATH}
 
 FROM pip-tools-install as base-python-install
-COPY src/requirements.txt .
+COPY requirements/requirements.txt .
 RUN pip-sync requirements.txt
 
 FROM base-python-install as dev-python-install
-COPY src/dev-requirements.txt .
+COPY requirements/dev-requirements.txt .
 RUN pip-sync dev-requirements.txt
