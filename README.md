@@ -18,5 +18,5 @@ Template repo for a python application utilizing dagster
 # Example dagster_project
 The example directory `./src/dagster_project` is provided as an example, utilizing the [hello_dagster.py](https://docs.dagster.io/getting-started/hello-dagster) provided by dagster
 - Can test with `./run_dev_container.sh`, then
-  - ```dagit -f dagster_project/hello_dagster.py -h 0.0.0.0```
+  - ```dagter dev -f dagster_project/hello_dagster.py -h 0.0.0.0```
   - Open your local browser to http://localhost:3000 to access
