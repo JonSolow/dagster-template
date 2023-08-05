@@ -14,7 +14,7 @@ anyio==3.7.1
     #   watchfiles
 backoff==2.2.1
     # via gql
-certifi==2023.5.7
+certifi==2023.7.22
     # via requests
 charset-normalizer==3.2.0
     # via requests
