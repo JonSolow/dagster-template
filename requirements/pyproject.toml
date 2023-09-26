@@ -2,7 +2,7 @@
 name = "dagster-template"
 version = "1"
 requires-python = ">3.10"
-dependencies = ["dagster", "dagit", "pandas"]
+dependencies = ["dagster", "dagster-webserver", "pandas"]
 
 [project.optional-dependencies]
 dev = ["pytest", "black", "flake8", "mypy", "types-requests"]
