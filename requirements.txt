@@ -27,14 +27,16 @@ coloredlogs==14.0
     # via dagster
 croniter==1.4.1
     # via dagster
-dagster==1.4.16
+dagster==1.5.0
     # via
     #   dagster-graphql
     #   dagster-template (pyproject.toml)
     #   dagster-webserver
-dagster-graphql==1.4.16
+dagster-graphql==1.5.0
     # via dagster-webserver
-dagster-webserver==1.4.16
+dagster-pipes==1.5.0
+    # via dagster
+dagster-webserver==1.5.0
     # via dagster-template (pyproject.toml)
 docstring-parser==0.15
     # via dagster
