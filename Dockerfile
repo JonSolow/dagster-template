@@ -21,11 +21,11 @@ ENTRYPOINT ["./start.sh"]
 
 
 FROM pip-tools-install as base-python-install
-COPY requirements/requirements.txt .
+COPY requirements.txt .
 RUN pip-sync requirements.txt
 
 FROM base-python-install as dev-python-install
-COPY requirements/dev-requirements.txt .
+COPY dev-requirements.txt .
 RUN pip-sync dev-requirements.txt
 
 FROM base-python-install as service
