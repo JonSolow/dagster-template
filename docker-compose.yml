@@ -1,0 +1,10 @@
+services:
+  dagster:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+      target: service
+    ports:
+      - '3000:3000'
+    environment:
+      - DAGSTER_HOME=/app/dagster_mount
