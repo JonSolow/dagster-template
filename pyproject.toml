@@ -6,3 +6,14 @@ dependencies = ["dagster", "dagster-webserver", "pandas"]
 
 [project.optional-dependencies]
 dev = ["pytest", "black", "flake8", "mypy", "types-requests"]
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 120
+src = ["src"]
+
+[tool.mypy]
+python_version = "3.10"
