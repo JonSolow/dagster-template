@@ -2,10 +2,21 @@
 name = "dagster-template"
 version = "1"
 requires-python = ">3.10"
-dependencies = ["dagster", "dagster-webserver", "pandas"]
+dependencies = [
+    "dagster",
+    "dagster-webserver",
+    "pandas",
+    ]
 
 [project.optional-dependencies]
-dev = ["pytest", "black", "flake8", "mypy", "types-requests"]
+dev = [
+    "black",
+    "mypy",
+    "pandas-stubs",
+    "pytest",
+    "ruff",
+    "types-requests",
+    ]
 
 [tool.black]
 line-length = 120
