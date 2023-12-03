@@ -4,19 +4,21 @@
 #
 #    pip-compile --output-file=requirements.txt pyproject.toml
 #
-alembic==1.12.0
+alembic==1.13.0
     # via dagster
 aniso8601==9.0.1
     # via graphene
-anyio==4.0.0
+annotated-types==0.6.0
+    # via pydantic
+anyio==4.1.0
     # via
     #   starlette
     #   watchfiles
 backoff==2.2.1
     # via gql
-certifi==2023.7.22
+certifi==2023.11.17
     # via requests
-charset-normalizer==3.2.0
+charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via
@@ -25,22 +27,22 @@ click==8.1.7
     #   uvicorn
 coloredlogs==14.0
     # via dagster
-croniter==1.4.1
+croniter==2.0.1
     # via dagster
-dagster==1.5.0
+dagster==1.5.10
     # via
     #   dagster-graphql
     #   dagster-template (pyproject.toml)
     #   dagster-webserver
-dagster-graphql==1.5.0
+dagster-graphql==1.5.10
     # via dagster-webserver
-dagster-pipes==1.5.0
+dagster-pipes==1.5.10
     # via dagster
-dagster-webserver==1.5.0
+dagster-webserver==1.5.10
     # via dagster-template (pyproject.toml)
 docstring-parser==0.15
     # via dagster
-fsspec==2023.9.2
+fsspec==2023.10.0
     # via universal-pathlib
 gql[requests]==3.4.1
     # via dagster-graphql
@@ -53,28 +55,28 @@ graphql-core==3.2.3
     #   graphql-relay
 graphql-relay==3.2.0
     # via graphene
-greenlet==2.0.2
+greenlet==3.0.1
     # via sqlalchemy
-grpcio==1.58.0
+grpcio==1.59.3
     # via
     #   dagster
     #   grpcio-health-checking
-grpcio-health-checking==1.58.0
+grpcio-health-checking==1.59.3
     # via dagster
 h11==0.14.0
     # via uvicorn
-httptools==0.6.0
+httptools==0.6.1
     # via uvicorn
 humanfriendly==10.0
     # via coloredlogs
-idna==3.4
+idna==3.6
     # via
     #   anyio
     #   requests
     #   yarl
 jinja2==3.1.2
     # via dagster
-mako==1.2.4
+mako==1.3.0
     # via alembic
 markupsafe==2.1.3
     # via
@@ -82,20 +84,22 @@ markupsafe==2.1.3
     #   mako
 multidict==6.0.4
     # via yarl
-numpy==1.26.0
+numpy==1.26.2
     # via pandas
-packaging==23.1
+packaging==23.2
     # via dagster
-pandas==2.1.1
+pandas==2.1.3
     # via dagster-template (pyproject.toml)
 pendulum==2.1.2
     # via dagster
-protobuf==4.24.3
+protobuf==4.25.1
     # via
     #   dagster
     #   grpcio-health-checking
-pydantic==1.10.12
+pydantic==2.5.2
     # via dagster
+pydantic-core==2.14.5
+    # via pydantic
 python-dateutil==2.8.2
     # via
     #   croniter
@@ -108,6 +112,7 @@ python-dotenv==1.0.0
     #   uvicorn
 pytz==2023.3.post1
     # via
+    #   croniter
     #   dagster
     #   pandas
 pytzdata==2020.1
@@ -128,11 +133,11 @@ six==1.16.0
     # via python-dateutil
 sniffio==1.3.0
     # via anyio
-sqlalchemy==2.0.21
+sqlalchemy==2.0.23
     # via
     #   alembic
     #   dagster
-starlette==0.31.1
+starlette==0.33.0
     # via
     #   dagster-graphql
     #   dagster-webserver
@@ -149,26 +154,27 @@ typing-extensions==4.8.0
     #   alembic
     #   dagster
     #   pydantic
+    #   pydantic-core
     #   sqlalchemy
 tzdata==2023.3
     # via pandas
-universal-pathlib==0.1.3
+universal-pathlib==0.1.4
     # via dagster
-urllib3==1.26.17
+urllib3==1.26.18
     # via
     #   gql
     #   requests
-uvicorn[standard]==0.23.2
+uvicorn[standard]==0.24.0.post1
     # via dagster-webserver
-uvloop==0.17.0
+uvloop==0.19.0
     # via uvicorn
 watchdog==3.0.0
     # via dagster
-watchfiles==0.20.0
+watchfiles==0.21.0
     # via uvicorn
-websockets==11.0.3
+websockets==12.0
     # via uvicorn
-yarl==1.9.2
+yarl==1.9.3
     # via gql
 
 # The following packages are considered to be unsafe in a requirements file:
