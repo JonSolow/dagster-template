@@ -73,7 +73,7 @@ httptools==0.6.1
     # via uvicorn
 humanfriendly==10.0
     # via coloredlogs
-idna==3.6
+idna==3.7
     # via
     #   anyio
     #   requests
