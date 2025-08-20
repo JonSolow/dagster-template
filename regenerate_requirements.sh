@@ -5,12 +5,12 @@ set -ex
 
 ADDITIONAL_ARGS=$@
 
-pip-compile \
+uv pip compile \
     -o requirements.txt \
     $ADDITIONAL_ARGS \
     pyproject.toml
     
-pip-compile \
+uv pip compile \
     --extra=dev \
     -o dev-requirements.txt \
     $ADDITIONAL_ARGS \
